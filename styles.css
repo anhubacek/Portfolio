@@ -1,0 +1,44 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#inicio{
+    background-color: #D96C80;;
+}
+
+
+/* Color Theme Swatches in Hex */
+.Metamorphosis-by-Ovid-1-hex { color: #D96A7E; }
+.Metamorphosis-by-Ovid-2-hex { color: #BBDDF2; }
+.Metamorphosis-by-Ovid-3-hex { color: #A9C6D9; }
+.Metamorphosis-by-Ovid-4-hex { color: #D97B59; }
+.Metamorphosis-by-Ovid-5-hex { color: #D99791; }
+
+
+
+
+/* Color Theme Swatches in Hex */
+.color-theme_IMG_9649-Editar-1-hex { color: #D96C80; }
+.color-theme_IMG_9649-Editar-2-hex { color: #3B3973; }
+.color-theme_IMG_9649-Editar-3-hex { color: #D9C8B4; }
+.color-theme_IMG_9649-Editar-4-hex { color: #BF4124; }
+.color-theme_IMG_9649-Editar-5-hex { color: #0D0D0D; }
+
+
+
+/* Color Theme Swatches in Hex */
+.GoodBrother®-—-Creative-agency-website-redesign-1-hex { color: #400235; }
+.GoodBrother®-—-Creative-agency-website-redesign-2-hex { color: #F066F2; }
+.GoodBrother®-—-Creative-agency-website-redesign-3-hex { color: #BF9663; }
+.GoodBrother®-—-Creative-agency-website-redesign-4-hex { color: #F2F2F2; }
+.GoodBrother®-—-Creative-agency-website-redesign-5-hex { color: #0D0D0D; }
