@@ -13,8 +13,73 @@ html{
 }
 
 #inicio{
-    background-color: #D96C80;;
+    background-image: url("./images/fondo-inicio1.jpg");
+   
+    height: 100vh;
+    background-size: cover;
+    background-position: center, center;
 }
+
+#inicio .contenido header{
+    background-color: #0D0D0D;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
+#inicio .contenido header .contenido-header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#inicio .contenido header .contenido-header h1{
+    justify-content: center;
+    color: rgba(0,0,0,0.5);
+}
+
+#inicio .contenido header .contenido-header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#inicio .contenido header .contenido-header nav ul li a{
+    text-decoration: none;
+    color: #D9C8B4;
+    margin: 0px 12px;
+    font-weight: 400px;
+    transition: .5s;
+}
+
+#inicio .contenido header .contenido-header nav ul li a:hover{
+    color: #D96C80;
+}
+#inicio .contenido .presentacion{
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    columns: white;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* Color Theme Swatches in Hex */
