@@ -13,7 +13,7 @@ html{
 }
 
 #inicio{
-    background-image: url("./images/fondo-inicio1.jpg");
+    background-image: url("./images/fondo-inicio2.jpg");
    
     height: 100vh;
     background-size: cover;
@@ -39,7 +39,19 @@ html{
 
 #inicio .contenido header .contenido-header h1{
     justify-content: center;
-    color: rgba(0,0,0,0.5);
+    color: #D96C80;
+}
+
+#inicio .contenido header .contenido-header .redes a{
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 10px;
+    color:white;
+    font-size: 20px;
+    transition: .5s;
+}
+#inicio .contenido header .contenido-header .redes a:hover{
+    color:#D96C80;
 }
 
 #inicio .contenido header .contenido-header nav ul {
@@ -50,7 +62,7 @@ html{
 
 #inicio .contenido header .contenido-header nav ul li a{
     text-decoration: none;
-    color: #D9C8B4;
+    color: white;
     margin: 0px 12px;
     font-weight: 400px;
     transition: .5s;
@@ -68,16 +80,57 @@ html{
     columns: white;
     align-items: center;
     justify-content: center;
+    color:white;
 
 }
+#inicio .contenido .presentacion .bienvenida{
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color:white;
+}
+#inicio .contenido .presentacion h2{
+    font-size: 45px;
+    margin-bottom: 25px;
+    text-align: center;
+}
 
+#inicio .contenido .presentacion h2 span{
+    font-size: 50px;
+    color: #D96C80;
+}
 
+#inicio .contenido .presentacion .descripcion{
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 18px;
+    text-align: center;
+}
 
+#inicio .contenido .presentacion a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 50px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: .5s;
+}
 
+#inicio .contenido .presentacion a:hover{
+    background-color: #D96C80;
 
-
-
-
+}
+#icono-nav{
+    color:white;
+    display: none;
+}
 
 
 
