@@ -21,7 +21,7 @@ html{
 }
 
 #inicio .contenido header{
-    background-color: #0D0D0D;
+    background-color: black;
     position: fixed;
     width: 100%;
     z-index: 100;
@@ -131,6 +131,56 @@ html{
     color:white;
     display: none;
 }
+
+
+#sobre-mi{
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color: #f3f3f3;
+    display: flex;
+    background-color: black;
+}
+
+#sobre-mi .contenedor-foto{
+    max-width: 400px;
+    margin-right: 80px;
+}
+
+#sobre-mi .contenedor-foto img{
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #f3f3f3;
+   
+}
+
+#sobre-mi .sobre-mi{
+    margin: 0px 40px;
+}
+
+#sobre-mi .sobre-mi .titulo-seccion{
+    font-size: 25px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #D96C80;
+    border-top: 2px solid #D96C80;
+    color: #D96C80;
+    width: fit-content;
+    padding: 2px;
+    margin: 10px;
+   
+
+ 
+}
+
+
+
+
+
+
+
+
+
 
 
 
