@@ -21,7 +21,7 @@ html{
 }
 
 #inicio .contenido header{
-    background-color: #0D0D0D;
+    background-color: black;
     position: fixed;
     width: 100%;
     z-index: 100;
@@ -84,7 +84,7 @@ html{
 
 }
 #inicio .contenido .presentacion .bienvenida{
-    font-size: 22px;
+    font-size: 26px;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -131,6 +131,77 @@ html{
     color:white;
     display: none;
 }
+
+
+#sobre-mi{
+    /* max-width: 1100px; */
+    margin: auto;
+    padding: 100px 100px;
+    color: #f3f3f3;
+    display: flex;
+    background-color: black;
+}
+
+#sobre-mi .contenedor-foto{
+    max-width: 300px;
+    margin-right: 80px;
+}
+
+#sobre-mi .contenedor-foto img{
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #f3f3f3;
+   margin-left: 40px;
+}
+
+#sobre-mi .sobre-mi{
+    margin: 0px 40px;
+}
+
+#sobre-mi .sobre-mi .titulo-seccion{
+    font-size: 25px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #D96C80;
+    border-top: 2px solid #D96C80;
+    color: #D96C80;
+    width: fit-content;
+    padding: 2px;
+    margin: 10px;
+   
+
+   
+    
+}
+
+#sobre-mi .sobre-mi h2{
+    font-size: 34px;
+    font-weight: 600;
+    margin: 20px 0px;
+    letter-spacing: 2px;
+}
+
+#sobre-mi .sobre-mi h2 span{
+    color: #D96C80;
+}
+
+#sobre-mi .sobre-mi h3{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#sobre-mi .sobre-mi p{
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 12px;
+    color: white
+}
+
+
+
 
 
 
