@@ -5,10 +5,14 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: "Montserrat";
+
 }
 
 html {
   scroll-behavior: smooth;
+}
+body{
+  background-color: black;
 }
 
 #inicio {
@@ -28,17 +32,24 @@ html {
 }
 
 #inicio .contenido header .contenido-header {
-  max-width: 1100px;
+  max-width: 90%;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
 }
-
-#inicio .contenido header .contenido-header h1 {
+#inicio .contenido header .contenido-header h1{
+  font-size: 20px;
   justify-content: center;
   color: #d96c80;
+}
+
+#inicio .contenido header .contenido-header p a{
+  font-size: 20px;
+  justify-content: center;
+  color: #d96c80;
+  text-decoration: none;
 }
 
 #inicio .contenido header .contenido-header .redes a {
@@ -88,6 +99,17 @@ html {
   letter-spacing: 5px;
   color: white;
 }
+#inicio .contenido .presentacion h1 {
+  font-size: 45px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+#inicio .contenido .presentacion h1 span {
+  font-size: 50px;
+  color: #d96c80;
+}
+
 #inicio .contenido .presentacion h2 {
   font-size: 45px;
   margin-bottom: 25px;
@@ -134,8 +156,9 @@ html {
   margin: auto;
   padding: 100px 100px;
   color: #f3f3f3;
-  display: flex;
   background-color: black;
+  display: inline-flex;
+  flex-direction: row;
 }
 
 #sobre-mi .contenedor-foto {
@@ -154,8 +177,12 @@ html {
 #sobre-mi .sobre-mi {
   margin: 0px 40px;
 }
+#sobre-mi .sobre-mi .titulo-seccion{
+  display: flex;
+  justify-content: flex-start;
+}
 
-#sobre-mi .sobre-mi .titulo-seccion {
+#sobre-mi .sobre-mi .titulo-seccion p{
   font-size: 25px;
   text-transform: uppercase;
   border-bottom: 2px solid;
@@ -167,7 +194,7 @@ html {
 }
 
 #sobre-mi .sobre-mi h2 {
-  font-size: 34px;
+  font-size: 30px;
   font-weight: 600;
   margin: 20px 0px;
   letter-spacing: 2px;
@@ -266,7 +293,9 @@ html {
 
 #servicios .fila .servicio h4 {
   font-size: 22px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  margin-top: 8px;
+  font-weight: 400;
 }
 
 #servicios .fila .servicio hr {
@@ -285,116 +314,15 @@ html {
 }
 #servicios .fila .servicio li{
     margin: 5px 0px;
+    font-size: 18px;
+    font-weight: 200;
 }
 
 #servicios .fila .servicio p {
   font-size: 14px;
   line-height: 22px;
 }
-/* *********************/
-/* seccion S K I L L S */
-/* *********************/
 
-.contenedor-skills {
-  background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, 0.8)),
-    url("img/fondo-skills.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #fff;
-  background-position: center center;
-  padding: 100px 0;
-  text-align: center;
-}
-
-.contenedor-skills .skill {
-  max-width: 600px;
-  margin: 30px auto;
-}
-
-.contenedor-skills .skill .info {
-  display: flex;
-  justify-content: space-between;
-}
-
-.contenedor-skills .skill .lista {
-  display: inline-block;
-  margin-right: 20px;
-  height: 10px;
-  width: 10px;
-  background-color: #fff;
-}
-
-.contenedor-skills .skill .barra {
-  background-color: #919191;
-  width: 100%;
-  height: 6px;
-  margin: 10px 0px;
-}
-
-.contenedor-skills .skill .barra .barra-progreso1 {
-  background-color: #fff;
-  width: 95%;
-  height: 6px;
-  animation: progreso1 2s forwards;
-}
-
-.contenedor-skills .skill .barra .barra-progreso2 {
-  background-color: #fff;
-  width: 90%;
-  height: 6px;
-  animation: progreso2 2s forwards;
-}
-
-.contenedor-skills .skill .barra .barra-progreso3 {
-  background-color: #fff;
-  width: 90%;
-  height: 6px;
-  animation: progreso3 2s forwards;
-}
-
-.contenedor-skills .skill .barra .barra-progreso4 {
-  background-color: #fff;
-  width: 85%;
-  height: 6px;
-  animation: progreso4 2s forwards;
-}
-
-@keyframes progreso1 {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 95%;
-  }
-}
-
-@keyframes progreso2 {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 90%;
-  }
-}
-
-@keyframes progreso3 {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 90%;
-  }
-}
-
-@keyframes progreso4 {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 85%;
-  }
-}
 /* *********************/
 /* seccion P O R T F O L I O */
 /* *********************/
@@ -403,22 +331,30 @@ html {
   max-width: 1100px;
   padding: 100px 0;
   margin: auto;
+  background-color: black;
+}
+
+#portfolio .div-titulo-seccion{
+  display: flex;
+  justify-content: center;
 }
 
 #portfolio .titulo-seccion {
-  text-align: center;
-  font-size: 22px;
-  text-transform: uppercase;
-  color: #111135;
-  text-decoration: underline;
-  text-decoration-color: #d3d3d3;
-  text-decoration-thickness: 5px;
+text-align: center;
+font-size: 25px;
+text-transform: uppercase;
+ border-bottom: 2px solid;
+border-top: 2px solid #d96c80;
+color: #d96c80;
+width: fit-content;
+padding: 2px;
+margin: 10px;
 }
 
 #portfolio .fila {
   display: flex;
   justify-content: space-between;
-  margin: 30px 0;
+  margin: 30px 20px;
 }
 
 #portfolio .fila .proyecto {
@@ -427,110 +363,86 @@ html {
   margin: 0 10px;
   position: relative;
   overflow: hidden;
+  transition: 0.5s;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px 5px #4f4e4e;
+}
+#portfolio .fila .proyecto:hover{
+  box-shadow: 0px 0px 25px 10px #686868;
+  cursor: pointer;
 }
 
 #portfolio .fila .proyecto img {
   width: 100%;
   height: 100%;
-  filter: grayscale(1);
+  filter: grayscale(0);
+  object-fit: cover;
+  transition: 0.5s;
+}
+#portfolio .fila .proyecto video{
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   transition: 0.5s;
 }
 
 #portfolio .fila .proyecto:hover img {
   filter: grayscale(0);
+
 }
 
 #portfolio .fila .proyecto .info {
   position: absolute;
   left: 0px;
   background-color: rgba(0, 0, 0, 0.8);
-  color: #ff5080;
+  color: #d96c80;
   width: 100%;
   padding: 10px;
   opacity: 0;
   bottom: -40px;
   transition: 0.5s;
 }
+#portfolio .fila .proyecto .info p {
+  color: #fff;
+  font-size: 12px;
+  line-height: 20px;
+}
+#portfolio .fila .proyecto .info a {
+  color: #d96c80;
+  font-size: 12px;
+  line-height: 20px;
+  margin-right: 15px;
+}
 
 #portfolio .fila .proyecto:hover .info {
   opacity: 1;
   bottom: 0;
 }
-/* *********************/
-/* seccion C O N T A C T O */
-/* *********************/
-
-#contacto {
-  padding: 100px 15px;
-  background-color: #f3f3f3;
-}
-
-#contacto .titulo-seccion {
-  margin-bottom: 20px;
-}
-
-#contacto .contenedor-form {
-  max-width: 1100px;
-  margin: auto;
-}
-
-#contacto .contenedor-form .fila {
-  margin-bottom: 15px;
-}
-
-#contacto .contenedor-form .mitad {
-  display: flex;
-  justify-content: space-between;
-}
-
-#contacto .contenedor-form input,
-#contacto .contenedor-form textarea {
-  padding: 20px;
-  border-radius: 20px;
-  border: none;
-  border: 1px solid #919191;
-}
-
-#contacto .contenedor-form .mitad input {
-  width: 48%;
-}
-
-#contacto .contenedor-form .input-full {
-  width: 100%;
-}
-
-#contacto .titulo-seccion {
-  text-align: center;
-  font-size: 22px;
-  text-transform: uppercase;
-  color: #111135;
-  text-decoration: underline;
-  text-decoration-color: #d3d3d3;
-  text-decoration-thickness: 5px;
-}
-
-#contacto .btn-enviar {
-  display: block;
-  margin: auto;
-  cursor: pointer;
-  transition: 0.5s;
-  padding: 10px 15px !important;
-}
-
-#contacto .btn-enviar:hover {
-  background-color: #ff5080;
-  color: #fff;
-}
-/* *********************/
-/* seccion F O O T E R */
-/* *********************/
 
 footer {
-  background-color: #000;
+  margin-top: 80px;
+  background-image: url("./images/fondo-inicio2.jpg");
   color: #fff;
   text-align: center;
   padding: 30px 0;
+}
+footer .redes-footer .titulo-seccion {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
+footer .redes-footer .titulo-seccion h3 {
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+   border-bottom: 2px solid  #d96c80;
+  border-top: 2px solid #d96c80;
+  color: #d96c80;
+  width: fit-content;
+  padding: 2px;
+  margin: 10px;
+  font-weight: 400;
 }
 
 footer a {
@@ -540,11 +452,32 @@ footer a {
   margin: 5px;
   font-size: 26px;
 }
+footer .redes-footer a{
+  text-decoration: none;
+  display: inline-block;
+  margin: 15px;
+  color: white;
+  font-size: 25px;
+  transition: 0.5s;
+  margin-bottom: 80px;
+}
+footer .redes-footer p{
+  margin-bottom: 130px;
+  padding-left: 15px;
+
+}
+footer .redes-footer p i{
+  margin-right: 6px;
+  margin-left: -10px;
+  font-size: 20px;
+}
+
+
 /* *********************/
-/* seccion R E S P O N S I V E */
+/* R E S P O N S I V E */
 /* *********************/
 
-@media screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
   .redes {
     display: none;
   }
@@ -570,29 +503,59 @@ footer a {
   #icono-nav {
     display: block;
   }
+  #inicio .contenido .presentacion{
+    margin: 0px 15px;
+  }
   #inicio .contenido .presentacion h2 {
-    font-size: 40px;
+    font-size: 32px;
+  }
+  #inicio .contenido .presentacion h2 span{
+    font-size: 32px;
+  }
+  #inicio .contenido .presentacion #full-stack{
+    font-size: 34px;
   }
   /* seccion SOBRE MI */
-  #sobremi {
-    padding: 50px 0;
-    display: block;
+  #sobre-mi {
+    display:flex;
+    flex-direction: column;
+    padding: 5px 5px;
+    align-items: center;
+
+
+
   }
-  #sobremi .contenedor-foto {
-    max-width: 200px;
-    margin: auto;
+  #sobre-mi .contenedor-foto {
+    width: 250px;
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    /* m˚ax-width: 200px; */
+
   }
-  #sobremi .contenedor-foto img {
+  #sobre-mi .contenedor-foto img {
     padding: 8px;
   }
-  #sobremi .sobremi .titulo-seccion {
+
+  #sobre-mi .sobre-mi .titulo-seccion{
+  display: flex;
+  justify-content: center;
+  }
+  #sobre-mi .sobre-mi .titulo-seccion p{
+   text-align: center;
+  }
+  #sobre-mi .sobre-mi h2 {
+    font-size: 16px;
     text-align: center;
   }
-  #sobremi .sobremi h2 {
-    font-size: 25px;
+  #sobre-mi .sobre-mi h3 {
     text-align: center;
   }
-  /* seccion MIS SERVICIOS */
+  #sobre-mi .sobre-mi p{
+    text-align: justify;
+  }
+
+
   #servicios {
     padding: 50px 15px;
   }
@@ -600,83 +563,23 @@ footer a {
     display: block;
   }
   #servicios .fila .servicio {
-    margin: 10px auto;
+    margin: 20px auto;
+    width: 80%;
+    padding: 20px;
   }
-  /* seccion HABLIDADES MI */
-  .contenedor-skills {
-    padding: 50px 20px;
+  #servicios .fila .servicio h4{
+    font-size: 20px;
+    margin-bottom: 2px;
   }
-  /* seccion PORTFOLIO */
   #portfolio {
     padding: 50px 0;
   }
   #portfolio .fila {
     display: block;
+    margin: 0px 30px;
   }
   #portfolio .fila .proyecto {
-    margin: 10px auto;
+    margin: 20px auto;
   }
-  /* seccion CONTACTO */
-  #contacto {
-    padding: 50px 15px;
-  }
-  #contacto .contenedor-form .mitad {
-    margin-bottom: 15px;
-    display: block;
-  }
-  #contacto .contenedor-form .mitad input {
-    width: 100%;
-    margin-bottom: 15px;
-  }
-}
-
-/* Color Theme Swatches in Hex */
-.Metamorphosis-by-Ovid-1-hex {
-  color: #d96a7e;
-}
-.Metamorphosis-by-Ovid-2-hex {
-  color: #bbddf2;
-}
-.Metamorphosis-by-Ovid-3-hex {
-  color: #a9c6d9;
-}
-.Metamorphosis-by-Ovid-4-hex {
-  color: #d97b59;
-}
-.Metamorphosis-by-Ovid-5-hex {
-  color: #d99791;
-}
-
-/* Color Theme Swatches in Hex */
-.color-theme_IMG_9649-Editar-1-hex {
-  color: #d96c80;
-}
-.color-theme_IMG_9649-Editar-2-hex {
-  color: #3b3973;
-}
-.color-theme_IMG_9649-Editar-3-hex {
-  color: #d9c8b4;
-}
-.color-theme_IMG_9649-Editar-4-hex {
-  color: #bf4124;
-}
-.color-theme_IMG_9649-Editar-5-hex {
-  color: #0d0d0d;
-}
-
-/* Color Theme Swatches in Hex */
-.GoodBrother®-—-Creative-agency-website-redesign-1-hex {
-  color: #400235;
-}
-.GoodBrother®-—-Creative-agency-website-redesign-2-hex {
-  color: #f066f2;
-}
-.GoodBrother®-—-Creative-agency-website-redesign-3-hex {
-  color: #bf9663;
-}
-.GoodBrother®-—-Creative-agency-website-redesign-4-hex {
-  color: #f2f2f2;
-}
-.GoodBrother®-—-Creative-agency-website-redesign-5-hex {
-  color: #0d0d0d;
+  
 }

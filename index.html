@@ -1,116 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Andrea Hubacek - Full Stack Web Developer, Quality Assurance, Photographer, Web Design. Tria Devs" />
     <title>Andrea Hubacek - Full Stack Developer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <section id="inicio">
-        <div id="contenido" class="contenido">
-            <header>
-                <div class="contenido-header">
-                    <h1>| AH |</h1>
-                    <nav id="nav">
-                        <ul id="links">
-                            <li><a href="#inicio">HOME</a></li>
-                            <li><a href="#sobre-mi">ABOUT ME</a></li>
-                            <li><a href="#servicios">SERVICES</a></li>
-                            <li><a href="#portfolio">PORTFOLIO</a></li>
-                            <li><a href="#contacto">CONTACT</a></li>
-                        </ul>
-                    </nav>
-                        <!--Iconos del menu responsive-->
-                        <div id="icono-nav">
-                            <i class="fa-solid fa-bars"></i>
-                        </div>
-                        <!--Iconos de las redes sociales-->
-                        <div class="redes">
-                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fa-brands fa-github"></i></a>
-                            <a href="#"><i class="fa-brands fa-behance"></i></a>
-                            
-                        </div>
-                </div>
-            </header>
-            <div class="presentacion">
-                <p class="bienvenida">Welcome</p>
-                <h2>I'm <span>Andrea Hubacek</span>, Full Stack Web Developer</h2>
-                <p class="descripcion">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-                    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-                </p>
-                <a href="#" class="portfolio">Portfolio</a>
-            </div>
-        </div>
+    
+    <link rel="icon" href="images/favicon.png" sizes="32x32" type="image/png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section id="inicio">
+      <div id="contenido" class="contenido">
+        <header>
+          <div class="contenido-header">
+            <p><a href="#inicio">| AH |</a></p>
+    
+            <nav id="nav">
+              <ul id="links">
+                <li><a href="#inicio">HOME</a></li>
+                <li><a href="#sobre-mi">ABOUT ME</a></li>
+                <li><a href="#servicios">SERVICES</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contacto">CONTACT</a></li>
+              </ul>
+            </nav>
+
+            <div id="icono-nav" onclick="responsiveMenu()">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="redes">
+              <a
+                href="https://www.linkedin.com/in/andreahubacek/"
+                target="”_blank”"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a href="https://github.com/anhubacek" target="”_blank”"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.behance.net/andreahubacek" target="”_blank”"
+                ><i class="fa-brands fa-behance"></i
+              ></a>
+            </div>
+          </div>
+        </header>
+        <div class="presentacion">
+          <p class="bienvenida">Welcome</p>
+          <h1>I'm <span>Andrea Hubacek</span>,</h1>
+          <h2 id="full-stack">Full Stack Web Developer</h2>
+          <a href="#portfolio" class="portfolio">Portfolio</a>
+        </div>
+      </div>
     </section>
     <section id="sobre-mi">
-        <div class="contenedor-foto">
-            <img src="./images/foto-perfil.jpg" alt="profilePicture"/>
+      <div class="contenedor-foto">
+        <img src="./images/foto-perfil.jpg" alt="profilePicture" />
+      </div>
+      <div class="sobre-mi">
+        <div class="titulo-seccion">
+          <p>About me</p>
         </div>
-        <div class="sobre-mi">
-            <p class="titulo-seccion">About me</p>
-            <h2>Hello, i'm <span>Andrea Hubacek</span></h2>
-            <h3>Full Stack Web Developer</h3>
-            <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-            </p>
-            <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-               
-            </p>
-            <!-- <a href="#">Download Resume</a> -->
-        </div>
+        <h2>Hello, i'm <span>Andrea Hubacek</span></h2>
+        <h3>Full Stack Web Developer</h3>
+        <p>
+          I'm a creative, visual, resourceful and decisive person, open to new
+          ideas. I enjoy working in a team and organizing.
+        </p>
+        <p>
+          I've got a Technical Degree in Clothing Production and I am an Amateur
+          Photographer. I love design and photography as much as I love
+          programming, and I'm also studying Humanistic Astrology.
+        </p>
+        <p>
+          My main goals are to develop myself as much as possible in every area
+          of ​​my life, both personally and professionally, as well as
+          spiritually, and to keep on learning every day to become a part of the
+          Tech Revolution.
+        </p>
+        <!-- <a href="#">Download Resume</a> -->
+      </div>
     </section>
     <section id="servicios">
-        <div class="div-titulo-seccion">
+      <div class="div-titulo-seccion">
         <p class="titulo-seccion">SERVICES</p>
-    </div>
-        <div class="fila">
-            <div class="servicio">
-                <span><i class="fa-solid fa-code"></i></span>
-                <h4>Front-End Development</h4>
-                <ul class="servicios-tag">
-                    <li>Javascript</li>
-                    <li>React.js</li>
-                    <li>Redux</li>
-                    <li>Next.js</li>
-                    <li>HTML5</li>
-                    <li>CSS</li>
-                    <li>Photoshop</li>
-                    <!-- <p>xxxxxxxxxxxxx</p> -->
-                </ul>
+      </div>
+      <div class="fila">
+        <div class="servicio">
+          <span><i class="fa-solid fa-code"></i></span>
+          <h4>Front-End Development</h4>
+          <ul class="servicios-tag">
+            <li>Javascript</li>
+            <li>React.js</li>
+            <li>Redux</li>
+            <li>Next.js</li>
+            <li>HTML5</li>
+            <li>CSS</li>
+
+            <!-- <p>xxxxxxxxxxxxx</p> -->
+          </ul>
+        </div>
+        <div class="servicio">
+          <span><i class="fa-solid fa-code"></i></span>
+          <h4>Back-End Development</h4>
+          <ul class="servicios-tag">
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>Nest.js</li>
+            <li>Typescript</li>
+            <li>SQL</li>
+            <li>Jest</li>
+          </ul>
+        </div>
+        <div class="servicio">
+          <span><i class="fa-solid fa-code"></i></span>
+          <h4>Project Management & Quality Assurance</h4>
+          <ul class="servicios-tag">
+            <li>Scrum</li>
+            <li>Kanban</li>
+            <li>Jira</li>
+            <li>Trello</li>
+            <li>Datadog</li>
+
+            <!-- <p>xxxxxxxxxxxxxxxxx</p> -->
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="portfolio">
+        <div class="div-titulo-seccion">
+            <p class="titulo-seccion">PORTFOLIO</p>
+          </div>
+      <div class="fila">
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <video id="video" loop autoplay preload muted>
+            <source src="videos/marketing-services.mp4"/>
+        </video>
+          <!-- <img src="images/marketingservices.jpeg" alt="Marketin Services" /> -->
+          <div class="info">
+            <h4>Marketing Services</h4>
+            <p>A marketing services web page for a Real Estate agent.</p>
+            <a href="https://github.com/anhubacek/LuxuryPresence" target="_blank">Go to project</a>
+          </div>
+        </div>
+        <div class="proyecto">
+            <div class="overlay"></div>
+            <!-- <img src="images/proyecto2.jpeg" alt="The Food App" /> -->
+            <video id="video" loop autoplay preload muted>
+                <source src="videos/the-food-app.mp4"/>
+            </video>
+            <div class="info">
+              <h4>The Food App</h4>
+              <p>An app where you can search for recipes, filter them by type of diet, sort them alphabetically or by score, create new ones, and delete them.</p>
+              <a href="https://github.com/anhubacek/the-food-app" target="_blank">Go to project</a>
+              <a href="https://youtu.be/bw2OQ0Ld87s" target="_blank">Go to video</a>
             </div>
-            <div class="servicio">
-                <span><i class="fa-solid fa-code"></i></span>
-                <h4>Back-End Development</h4>
-                <ul class="servicios-tag">
-                    <li>Node.js</li>
-                    <li>Express.js</li>
-                    <li>Nest.js</li>
-                    <li>Typescript</li>
-                    <li>PostgreSQL</li>
-                    <li>Postman</li>
-                    <!-- <p>xxxxxxxxxxxxxxxxx</p> -->
-                </ul>
-            </div>
-            <div class="servicio">
-                <span><i class="fa-solid fa-code"></i></span>
-                <h4>Quality Assurance and Project Managment</h4>
-                <ul class="servicios-tag">
-                    <li>Scrum</li>
-                    <li>Kanban</li>
-                    <li>Jira</li>
-                    <li>Datadog</li>
-                    <li>Slack</li>
-                    <!-- <p>xxxxxxxxxxxxxxxxx</p> -->
-                </ul>
+          </div>
+        </div>
+     
+      </div>
+      <div class="fila">
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="images/weatherapp.jpeg" alt="Weather App" />
+          <div class="info">
+            <h4>Weather App</h4>
+            <p>
+                The app displays a clock and the current date, and allows access to weather information through device geolocation.</p>
+            <a href="https://github.com/anhubacek/WeatherApp" target="_blank">Go to project</a>
+          </div>
+        </div>
+          <div class="proyecto">
+            <div class="overlay"></div>
+            <img src="images/proyecto1.jpeg" alt="Stripe Checkout" />
+            <div class="info">
+              <h4>Stripe Checkout</h4>
+              <p>
+                Stripe app emulation to set up a checkout page with different types of fields and features.</p>
+                <a href="https://github.com/anhubacek/Stripe-Challenge" target="_blank">Go to project</a>
             </div>
         </div>
-        
+       
+        </div>
+      </div>
+      <div class="fila">
+        <div class="proyecto">
+            <div class="overlay"></div>
+            <!-- <img src="images/akademit.jpeg" alt="AkademIT" /> -->
+            <video id="video" loop autoplay preload muted>
+                <source src="videos/akademIT.mp4"/>
+            </video>
+            <div class="info">
+              <h4>AkademIT</h4>
+              <p>E-learning platform that allows user registration, creation, search and purchase of courses.</p>
+              <a href="https://github.com/anhubacek/AkademIT" target="_blank">Go to project</a>
+              <a href="https://youtu.be/iuSiIuAF4HA" target="_blank">Go to video</a>
+            </div>
+          </div>
+         
+      </div>
     </section>
-</body>
+
+    <footer>
+       
+      <div id="contacto" class="redes-footer">
+        <div class="titulo-seccion">
+            <h3>Contact me</h3>
+        </div>
+        <p><i class="fa-regular fa-envelope"></i>hubacekk@gmail.com</p>
+        <a href="https://www.linkedin.com/in/andreahubacek/" target="”_blank”"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+        <a href="https://github.com/anhubacek" target="”_blank”"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://www.behance.net/andreahubacek" target="”_blank”"
+          ><i class="fa-brands fa-behance"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
+
+
